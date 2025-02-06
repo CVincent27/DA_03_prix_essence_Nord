@@ -4,7 +4,8 @@
 Analyse des prix du carburant dans le département du Nord
 
 Ressources :
-https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/information/
+Data : https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/information/
+Lien BigQuery : https://console.cloud.google.com/bigquery?sq=958002423793:9a9dc784e2574adf827e1edab83b712f
 
 Étapes de réalisation:
 - Récupération des données sur le site du gouvernement
@@ -19,4 +20,4 @@ https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux
   * 6. Afficher les stations essence du département 59 qui ont du SP95
   * 7. Trouver la station la moins chère pour le SP95 du département 59
 
-  
+
