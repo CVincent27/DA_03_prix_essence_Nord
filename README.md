@@ -1,4 +1,6 @@
 # Projet d'analyse du prix du carburant
+![background](https://github.com/user-attachments/assets/09ac6969-8e78-4910-a7cd-1d8fcd8d2f65)
+
 Analyse des prix du carburant dans le département du Nord
 
 Ressources :
