@@ -21,23 +21,23 @@ SELECT
 FROM `fr_carburant.fr_carburant`
 */
 
-# 4. Afficher les stations essence du département: 59
+# 4. Afficher les stations essence du département: 59 et 62
 
 /*
 SELECT adresse,ville, code_departement
 FROM `fr_carburant.fr_carburant`
-WHERE code_departement = 59
+WHERE code_departement IN (59,62)
 */
 
-# 5. Compter les stations essence du département: 59
+# 5. Compter les stations essence du département: 59 et 62
 
 /*
-SELECT COUNT(*) as nbr_stations_59
+SELECT COUNT(*) as nbr_stations_59_62
 FROM `fr_carburant.fr_carburant`
-WHERE code_departement = 59
+WHERE code_departement IN (59,62)
 */
 
-# 6. Afficher les stations essence du département 59 qui ont du SP95
+# 6. Afficher les stations essence du département 59 et 62 qui ont du SP95
 
 /*
 SELECT 
@@ -46,11 +46,10 @@ SELECT
   code_departement,
   prix_sp95
 FROM `fr_carburant.fr_carburant`
-WHERE code_departement = 59
-  AND prix_sp95 IS NOT NULL
+WHERE prix_sp95 IS NOT NULL AND code_departement IN (59,62)
 */
 
-# 7. Trouver la station la moins chère pour le SP95 du département 59
+# 7. Trouver la station la moins chère pour le SP95 du département 59 et 62
 
 /*
 SELECT 
@@ -59,7 +58,6 @@ SELECT
   prix_sp95,
   DATE(prix_sp95_maj_le) as maj_prix_sp95
 FROM `fr_carburant.fr_carburant`
-WHERE code_departement = 59
-  AND prix_sp95 IS NOT NULL
+WHERE prix_sp95 IS NOT NULL AND code_departement IN (59,62)
 ORDER BY prix_sp95 ASC
 */
