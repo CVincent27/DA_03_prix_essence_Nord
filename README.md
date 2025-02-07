@@ -3,7 +3,7 @@
 
 Ressources :
 * Données : https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/information/
-* Lien BigQuery : https://console.cloud.google.com/bigquery?sq=958002423793:9a9dc784e2574adf827e1edab83b712f
+* Lien du rapport Looker: https://lookerstudio.google.com/reporting/c82f7bc1-3ac4-4b33-8dd0-d7e62c659305
 
 Étapes de réalisation:
 - Récupération des données sur le site du gouvernement
